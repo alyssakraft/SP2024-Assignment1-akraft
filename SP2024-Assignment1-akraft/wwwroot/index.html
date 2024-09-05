@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+
+<!--Find a movie or TV series that you are a fan of and employ the following HTML/CSS features:
+A background color for the entire page of your choosing.
+A div containing:
+ an H1 Element with an ID of 'Title'.
+
+ Image element related to the media with and ID of 'CoverArt' (Cover art is good here). This image should be circular/have rounded edges.
+ Heading 5 element with an ID of 'Rating'. This should be the rating from IMDB out of 10.
+ Iframe embeding a youtube video of a trailer of the media with an ID of 'Trailer'. This can be acquired by right clicking on the video, and copying the embed.
+ Attribute linking to the IMDB page.
+ the summary text from IMDB in a Paragraph element with an ID of 'Summary'.
+ Unordered list of three to five actors. This unorder list element should have an ID of 'Actors'.
+All content on the page should be centered.
+Color all text on the page in a contrasting color to the one you picked for the background.
+It is best to take this little pieces at a time, step by step, as not to get confused by too many things at once. W3 Schools is an amazing resource, and has examples on everything above if you get stuck.
+Feel free to get creative and add additional features after base requirements have been met
+Publishing the application to Azure
+Publishing the app is a key requirement of the assignment. Follow the steps referenced in class and in the corresponding video from class. GitHub will be required for future projects but not this assignment.
+-->
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+        .cover{
+            position: relative;
+            display: flex;
+            flex-flow:column;
+            color: white;
+            width:100%;
+        }
+
+        h1 {
+            color: black;
+            font-size: 500%;
+        }
+
+        img {
+            max-width: 96%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 2%;
+            border-radius: 15%;
+        }
+
+    </style>
+
+</head>
+<body style="background-color:powderblue">
+    <div id="cover">
+        <div>
+            <h1>The Office</h1>
+        </div>
+        <div>
+            <img id="CoverArt" src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2023/03/the-office-cropped-poster.jpg" alt="The Office Cover Picture" />
+        </div>
+    </div>
+    <div>
+        <h5>Rating</h5>
+    </div>
+</body>
+</html>
