@@ -25,16 +25,24 @@ Publishing the app is a key requirement of the assignment. Follow the steps refe
     <title></title>
 
     <style>
-        .cover{
-            position: relative;
+        body{
+            color: darkblue;
+            
             display: flex;
-            flex-flow:column;
-            color: white;
-            width:100%;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            text-align: center;
+        }
+
+        .cover {
+            padding: 20px;
+            margin: auto;
+            max-width: 800px;
         }
 
         h1 {
-            color: black;
+            color: darkblue;
             font-size: 500%;
         }
 
@@ -51,15 +59,24 @@ Publishing the app is a key requirement of the assignment. Follow the steps refe
 </head>
 <body style="background-color:powderblue">
     <div id="cover">
-        <div>
-            <h1>The Office</h1>
-        </div>
-        <div>
-            <img id="CoverArt" src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2023/03/the-office-cropped-poster.jpg" alt="The Office Cover Picture" />
-        </div>
-    </div>
-    <div>
-        <h5>Rating</h5>
+        <h1>The Office</h1>
+
+        <img id="CoverArt" src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2023/03/the-office-cropped-poster.jpg" alt="The Office Cover Picture" />
+
+        <p><a href="https://www.imdb.com/title/tt0386676/" target="_blank">View on IMDb</a></p>
+
+        <h5>Rating: 9.0/10</h5>
+
+        <p id="summary">A mockumentary on a group of typical office workers, where the workday consists of ego clashes, inappropriate behavior, tedium and romance.</p>
+
+        <ul style="list-style-type:none; padding:0">
+            <li>Steve Carrell</li>
+            <li>Jenna Fischer</li>
+            <li>John Krasinski</li>
+            <li>Rainn Wilson</li>
+        </ul>
+
+        <iframe id="Trailer" width="560" height="315" src="https://www.youtube.com/embed/-C2z-nshFts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </body>
 </html>
